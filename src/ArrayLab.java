@@ -187,17 +187,15 @@ public class ArrayLab {
 
         for (int i = 0; i < 100; i++) {
 
-            d0 = (int) (Math.random() * 12) + 1;
+            d0 = (int) (Math.random() * 6) + 1;
 
-            d1 = (int) (Math.random() * 12) + 1;
+            d1 = (int) (Math.random() * 6) + 1;
 
             for (int i1 = 0; i1 < sum.length; i1++) {
 
-                if (d0 == (i1 + 2))
+                if (d0 + d1 == (i1 + 2))
                     sum[i1] += 1;
 
-                if (d1 == (i1 + 2))
-                    sum[i1] += 1;
             }
 
         }
